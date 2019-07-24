@@ -4,10 +4,11 @@
     "version": "1.0",
     "author": "Luca D'Angelo",
     "manifest_version": 2,
-    "browser_action": {
-        "default_popup": "popup.html",
-        "default_title": "MRTlib"
+    "page_action": {
+        "default_title": "MRTlib",
+        "default_popup": "popup.html"
     },
+    "permissions": ["declarativeContent"],
     "background": {
         "scripts": ["background.js"], 
         "persistent": false
