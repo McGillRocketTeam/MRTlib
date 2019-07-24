@@ -4,14 +4,24 @@
         <title>MRTlib Popup</title>
         <style>
             button {
-                width: 70px;
+                width: 200px;
                 height: 30px;
                 outline: none;
             }
         </style>
     </head>
     <body>
-        <button id="addComponent">Add Component</button>
-        <script scr="popup.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#config-web-app -->
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+
+        <script src="init-firebase.js"></script>
+
+        
+        <button id="addComponentButton">Add Component</button>
     </body>
+    <script src="popup.js"></script>
 </html>
