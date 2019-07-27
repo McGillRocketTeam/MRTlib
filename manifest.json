@@ -8,10 +8,16 @@
         "default_title": "MRTlib",
         "default_popup": "popup.html"
     },
-    "permissions": ["declarativeContent"],
+    "permissions": ["declarativeContent", "storage"],
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
+    "content_scripts": [
+        {
+            "matches": ["https://www.digikey.ca/product-detail/en/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
     "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self';"
 }

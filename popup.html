@@ -2,15 +2,10 @@
 <html>
     <head>
         <title>MRTlib Popup</title>
-        <style>
-            button {
-                width: 200px;
-                height: 30px;
-                outline: none;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
+        
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
 
@@ -20,8 +15,12 @@
 
         <script src="init-firebase.js"></script>
 
+        <div id="container">
+            <h1>Welcome to MRTlib!</h1>
+            <button id="addComponentButton">Add Component</button>
+            <span>&copy2019 - McGill Rocket Team</span>
+        </div>
         
-        <button id="addComponentButton">Add Component</button>
     </body>
     <script src="popup.js"></script>
 </html>

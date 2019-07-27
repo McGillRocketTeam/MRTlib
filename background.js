@@ -2,7 +2,7 @@
 var rule1 = {
     conditions: [
         new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { hostEquals: 'www.digikey.ca', schemes: ['https'] }, 
+            pageUrl: { hostPrefix: 'www.digikey.ca', pathContains: 'product-detail/en', schemes: ['https'] }
         })
     ],
     actions: [ new chrome.declarativeContent.ShowPageAction() ]
