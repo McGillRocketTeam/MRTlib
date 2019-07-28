@@ -5,8 +5,11 @@
  * @returns {String}
  */
 function getComponent_DIGIKEY() {
-    let manPartNumber = document.querySelector("#product-overview tr td meta[itemprop='name']").getAttribute('content');
-    return {man_part_number: manPartNumber};
+    let manPartNumber = document.querySelector("#product-overview tbody tr td meta[itemprop='name']").getAttribute('content');
+    let manufacturer = document.querySelector("#product-overview tbody tr td h2 span a span[itemprop='name']").innerText;
+    let category = document.querySelector(".breadcrumbs").querySelectorAll("a")[1].innerText;
+    let description = document.querySelector("#product-overview tbody tr td h3[itemprop='description']").innerText;
+    return {man_part_number: manPartNumber, manufacturer: manufacturer, category: category, description: description};
 }
 
 let component_DIGIKEY = getComponent_DIGIKEY();
