@@ -1,15 +1,15 @@
 # MRTlib
 Chrome browser extension for the McGill Rocket Team's SMD components library.
 
-# Installation
+## Installation
 * Installation from the Chrome Web Store
 * Installation from GitHub repository
 
-# Debugging
+## Debugging
 
-# Contribution Guidelines
+## Contribution Guidelines
 
-# More Information
+## More Information
 
-# License
+## License
 [MIT License](LICENSE)
