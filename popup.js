@@ -32,9 +32,11 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
     .then(function(docRef) {
         console.log("Document successfully written!");
         debug_add();  
+        alert("Component successfully added to database!");
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
+        alert("Error adding component to database!");
     });
 }
 
@@ -62,7 +64,7 @@ addComponentButton.onclick = () => {
     
     // Check to see if package variable was assigned a value
     if (package == "") {
-        package = null;
+        package = "null_string";
     }
     
     try {
@@ -73,10 +75,10 @@ addComponentButton.onclick = () => {
         }
     
         // Reset the form
-        alert("Component successfully added to database!");
         document.getElementById("componentForm").reset();
     } catch (error) {
         console.log(error);
+        alert("There was an unknown error. Please try again.");
     }
 
 
