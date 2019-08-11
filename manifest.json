@@ -1,7 +1,7 @@
 {
     "name": "MRTlib",
     "description": "Chrome browser extension for the McGill Rocket Team's SMD components library.",
-    "version": "1.0",
+    "version": "1.5.0",
     "author": "Luca D'Angelo",
     "manifest_version": 2,
     "page_action": {
