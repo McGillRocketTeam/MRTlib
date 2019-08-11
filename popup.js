@@ -26,8 +26,7 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
         package: package,
         description: component.description,
         quantity: quantity,
-        date_created: firebase.firestore.FieldValue.serverTimestamp(),
-        user: firebase.auth.user
+        date_created: firebase.firestore.FieldValue.serverTimestamp()
     }, {merge: true})
     .then(function(docRef) {
         console.log("Document successfully written!");
