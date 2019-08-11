@@ -2,7 +2,7 @@
 
 Chrome browser extension for the McGill Rocket Team's SMD components library. 
 
-**Note:** Further development has been migrated to the mirrored repository found at the McGill Rocket Team's organization page linked [here](https://github.com/McGillRocketTeam/MRTlib).
+**Note:** This is a mirrored repository, all further development will continue from this repository. The original repository can be  found at the link [here](https://github.com/lucagdangelo/MRTlib).
 
 ## Brief User Guide
 * Access is restricted to users who hold a valid student McGill email address (i.e. *@mail.mcgill.ca)
