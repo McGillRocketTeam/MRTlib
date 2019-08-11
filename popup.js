@@ -27,7 +27,7 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
         description: component.description,
         quantity: quantity,
         date_created: firebase.firestore.FieldValue.serverTimestamp(),
-        date_updated: null
+        user: firebase.auth.user
     }, {merge: true})
     .then(function(docRef) {
         console.log("Document successfully written!");
@@ -36,7 +36,7 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
-        alert("Error adding component to database! Remember, you must have a valid McGill student email address.");
+        alert("Error adding component to database! Remember, you must have a valid McGill student email address and you must have verified your email address using the link that was sent.");
     });
 }
 

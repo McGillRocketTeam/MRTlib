@@ -36,3 +36,10 @@ var uiConfig = {
 
 // The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);
+
+// Check email verification
+firebase.auth().onAuthStateChanged(user => {
+  if (user.emailVerified === false) {
+    user.sendEmailVerification();
+  }
+});
