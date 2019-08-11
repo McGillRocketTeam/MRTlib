@@ -7,12 +7,15 @@
 }
 
 #email-warning {
-    margin: 0px;
     font-size: 15px;
 }
 
+#empty-container {
+    height: 22px;
+}
+
 #addComponentButton {
-    background-color: pink;
+    background-color: #ffc3d7;
 }
 
 #firebaseui-auth-container {
