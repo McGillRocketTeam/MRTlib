@@ -6,7 +6,7 @@
     "manifest_version": 2,
     "page_action": {
         "default_title": "MRTlib",
-        "default_popup": "popup.html"
+        "default_popup": "authentication.html"
     },
     "permissions": ["declarativeContent", "storage"],
     "background": {

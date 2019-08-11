@@ -11,17 +11,18 @@ var uiConfig = {
       },
       uiShown: function() {
         // The widget is rendered.
-        // Hide the loader.
-        document.getElementById('loader').style.display = 'none';
       }
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
     signInFlow: 'popup',
     signInSuccessUrl: 'popup.html',
     signInOptions: [
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
+      {
+        provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+        requireDisplayName: false
+      }
     ]
   };
 
-  // The start method will wait until the DOM is loaded.
+// The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);

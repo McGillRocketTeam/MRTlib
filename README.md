@@ -6,12 +6,16 @@ Chrome browser extension for the McGill Rocket Team's SMD components library.
 ## Installation
 * Installation from the Chrome Web Store
 * Installation from GitHub repository
+    1. Clone the repository
+    1. Open the Chrome browser
+    1. Type the following in the address bar and press enter: `chrome://extensions`
+    1. click `Load unpacked` to add the local extension folder to your chrome browser
 
 ## Debugging
-
-## Contribution Guidelines
+Use the Chrome Developer Tools debugger when testing the extension locally. 
 
 ## More Information
+Made with love :)
 
 ## License
 [MIT License](LICENSE)

@@ -75,7 +75,7 @@ addComponentButton.onclick = () => {
         }
     
         // Reset the form
-        document.getElementById("componentForm").reset();
+        document.getElementById("input-form").reset();
     } catch (error) {
         console.log(error);
         alert("There was an unknown error. Please try again.");
