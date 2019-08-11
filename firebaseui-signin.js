@@ -1,3 +1,12 @@
+/**
+ * Method to validate the email domain. Only McGill email addresses are allowed.
+ * @param {string} email 
+ * @return {boolean}
+ */
+function validateEmail(email) {
+
+}
+
 // Initialize the FirebaseUI Widget using Firebase.
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
@@ -11,6 +20,8 @@ var uiConfig = {
       },
       uiShown: function() {
         // The widget is rendered.
+        let email = document.querySelector("input[name='email']").nodeValue;
+
       }
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
