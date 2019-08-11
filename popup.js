@@ -36,7 +36,7 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
-        alert("Error adding component to database!");
+        alert("Error adding component to database! Remember, you must have a valid McGill student email address.");
     });
 }
 

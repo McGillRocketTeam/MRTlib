@@ -20,8 +20,7 @@ var uiConfig = {
       },
       uiShown: function() {
         // The widget is rendered.
-        let email = document.querySelector("input[name='email']").nodeValue;
-
+        
       }
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.

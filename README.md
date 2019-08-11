@@ -5,7 +5,8 @@ Chrome browser extension for the McGill Rocket Team's SMD components library.
 **Note:** Further development has been migrated to the forked repository found at the McGill Rocket Team's organization page linked [here](https://github.com/McGillRocketTeam).
 
 ## Brief User Guide
-* Currently, you will have to login each time you want to add a component to the database. I haven't figure out a way to fix this yet :/
+* Access is restricted to users who hold a valid student McGill email address (i.e. *@mail.mcgill.ca)
+* You will have to login each time you want to add a component to the database or if you exit the extension. I haven't figure out a way to fix this yet :/
 
 ## Installation
 * Installation from the Chrome Web Store
