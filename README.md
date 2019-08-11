@@ -9,7 +9,9 @@ Chrome browser extension for the McGill Rocket Team's SMD components library.
     1. Clone the repository
     1. Open the Chrome browser
     1. Type the following in the address bar and press enter: `chrome://extensions`
-    1. click `Load unpacked` to add the local extension folder to your chrome browser
+    1. Click `Load unpacked` to add the local extension folder to your chrome browser
+    1. Go to any product page that has the following as a prefix `https://www.digikey.ca/product-detail/en/`
+    1. Click the MRTlib extension icon to start the extension
 
 ## Debugging
 Use the Chrome Developer Tools debugger when testing the extension locally. 
