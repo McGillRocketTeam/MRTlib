@@ -1,4 +1,5 @@
 ![MRTlib logo](images/MRTlib_logo.png)
+
 Chrome browser extension for the McGill Rocket Team's SMD components library. 
 
 **Note:** Further development has been migrated to the forked repository found at the McGill Rocket Team's organization page linked [here](https://github.com/McGillRocketTeam).
