@@ -35,7 +35,7 @@ Use the Chrome `Developer Tools` debugger when testing the extension locally.
 ## More Information
 Made with love :)
 
-Feel free to contact me at my [email](ldgaetano@gmail.com) if you have any questions or if you find a bug. 
+Feel free to contact me at my email (ldgaetano@gmail.com) if you have any questions or if you find a bug. 
 
 ## License
 [MIT License](LICENSE)
