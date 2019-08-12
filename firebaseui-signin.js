@@ -1,12 +1,3 @@
-/**
- * Method to validate the email domain. Only McGill email addresses are allowed.
- * @param {string} email 
- * @return {boolean}
- */
-function validateEmail(email) {
-
-}
-
 // Initialize the FirebaseUI Widget using Firebase.
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
