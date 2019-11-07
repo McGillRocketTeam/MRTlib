@@ -1,5 +1,5 @@
 /**
- * rule1: Only allow extension popup to display on specific webpage 
+ * rule1: Only allow extension popup to display on specific webpage
  */
 var rule1 = {
     conditions: [

@@ -1,7 +1,7 @@
 // Get instance of the database
 var db = firebase.firestore();
 
-// Test function 
+// Test function
 function debug_add() {
     db.collection("components").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
@@ -12,8 +12,8 @@ function debug_add() {
 
 /**
  * Method to add DIGIKEY object component to database collection
- * @param {Object} component 
- * @param {int} quantity 
+ * @param {Object} component
+ * @param {int} quantity
  * @param {String} value
  * @param {String} package
  */
@@ -30,7 +30,7 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
     }, {merge: true})
     .then(function(docRef) {
         console.log("Document successfully written!");
-        debug_add();  
+        debug_add();
         alert("Component successfully added to database!");
     })
     .catch(function(error) {
@@ -41,7 +41,7 @@ function addComponentToFirestoreDB_DIGIKEY(component, quantity, value, package) 
 
 /**
  * Method to retrieve data from chrome storage and add object to DB
- * @param {int} quantity 
+ * @param {int} quantity
  * @param {String} value
  * @param {String} package
  */
@@ -60,19 +60,19 @@ addComponentButton.onclick = () => {
     let quantity = document.getElementById("componentQuantity").value;
     let value = document.getElementById("componentValue").value;
     let package = document.getElementById("componentPackage").value;
-    
+
     // Check to see if package variable was assigned a value
     if (package == "") {
         package = "null_string";
     }
-    
+
     try {
         if (quantity > 0 && value != "") {
             addComponent_DIGIKEY(quantity, value, package);
         } else {
             alert("Remember, you must enter a valid component quantity and value!");
         }
-    
+
         // Reset the form
         document.getElementById("input-form").reset();
     } catch (error) {
